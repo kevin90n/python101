@@ -12,4 +12,4 @@ with open("/home/kevin/python/python101/times_of_india.txt", 'r') as json_file:
       fo.write(lines)
     else:
       fo.write(lines)
-
+fo.close()
