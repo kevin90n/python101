@@ -5,11 +5,10 @@ with open("/home/kevin/python/python101/times_of_india.txt", 'r') as json_file:
     pattern_1='-{'
     pattern_2='-\"source\"'
     if pattern_1 in lines:
-      fo.write("{")
+     fo.write(lines.replace(pattern_1,pattern_1[1]))
     elif pattern_2 in lines:
-      fo.write('\"source\"')
-    elif pattern_1 not in lines:
-      fo.write(lines)
+     fo.write(lines.replace(pattern_2,pattern_2[1:9]))
     else:
-      fo.write(lines)
+     fo.write(lines)
 fo.close()
+
