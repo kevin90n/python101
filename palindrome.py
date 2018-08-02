@@ -1,19 +1,19 @@
-a_string = input("Enter a string: ")
-final_string=[]
+import sys
+entries=sys.argv[1]
+length=int(len(entries) -1)
+i=0
+result=None
+while( i < length):
+  print(entries[i])
+  print(entries[length])
+  if entries[i] != entries[length]:
+    result="nope"
+  i+=1
+  length-=1
+if(result!=None):
+ print("not a palindrome")
+else:
+  print("palindrome")
 
-def reversing():
-  splitted=list(a_string)
-  i=(len(a_string)) - 1
-  j = 0
-  while( i >= 0 ):
-    if (splitted[i] != splitted[j]):
-          final_string.append("failed")
-    j=j+1
-    i=i-1
-#  print(final_string)
-  if final_string != []:
-    print("Not a palindrome")
-  else:
-    print("It is a palindrome")
-if __name__ == "__main__":
-  reversing()
+    
+    

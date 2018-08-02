@@ -8,5 +8,6 @@ def reversing():
     final_string.append(splitted[i])
     i-=1
   print("".join(final_string))
+
 if __name__ == "__main__":
   reversing()
