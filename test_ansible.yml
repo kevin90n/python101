@@ -1,0 +1,6 @@
+- hosts: 172.31.82.59
+  vars_files:
+    - pass_file
+  tasks:
+    - name: running hello
+      command: echo "hello"
